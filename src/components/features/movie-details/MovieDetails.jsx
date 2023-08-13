@@ -33,7 +33,7 @@ const MovieDetails = ({ movie }) => {
           <h2>{title}</h2>
           <p>{summary}</p>
           <p>Year: {year}</p>
-          <p>Genre: {genre}</p>
+          <p>Genre: {genre.join(", ")}</p>
           <p>Rating: {rating}</p>
           <p>Director: {director}</p>
           <p>Writer: {writer}</p>
