@@ -1,0 +1,39 @@
+.add-new-movie-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-height: calc(100vh - 4rem - 4rem);
+  overflow-y: auto;
+}
+
+.add-new-movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-new-movie-form label {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.add-new-movie-form input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.add-movie-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: fit-content;
+}

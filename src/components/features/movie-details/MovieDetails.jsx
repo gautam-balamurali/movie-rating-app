@@ -33,11 +33,27 @@ const MovieDetails = ({ movie }) => {
           <h2>{title}</h2>
           <p>{summary}</p>
           <p>Year: {year}</p>
-          <p>Genre: {genre.join(", ")}</p>
+          <p>
+            Genre:{" "}
+            {typeof genre === "string"
+              ? genre
+                  .split(",")
+                  .map((str) => str.trim())
+                  .join(", ")
+              : genre.join(", ")}
+          </p>
           <p>Rating: {rating}</p>
           <p>Director: {director}</p>
           <p>Writer: {writer}</p>
-          <p>Cast: {cast.join(", ")}</p>
+          <p>
+            Cast:{" "}
+            {typeof cast === "string"
+              ? cast
+                  .split(",")
+                  .map((str) => str.trim())
+                  .join(", ")
+              : cast.join(", ")}
+          </p>
 
           <div className="action-btns">
             <button
