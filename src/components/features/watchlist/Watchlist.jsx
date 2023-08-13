@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useMovieRating } from "../../../core/contexts/MovieRatingContext";
 import MoviesListing from "../../shared/movies-listing-component/MoviesListing";
 

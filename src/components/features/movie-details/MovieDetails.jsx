@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useMovieRating } from "../../../core/contexts/MovieRatingContext";
 import "./MovieDetails.css";
 

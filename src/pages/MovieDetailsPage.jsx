@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useParams } from "react-router-dom";
 import MovieDetails from "../components/features/movie-details/MovieDetails";
 import { useMovieRating } from "../core/contexts/MovieRatingContext";

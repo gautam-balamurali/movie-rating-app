@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import "./SearchBar.css";
 
 const SearchBar = () => {

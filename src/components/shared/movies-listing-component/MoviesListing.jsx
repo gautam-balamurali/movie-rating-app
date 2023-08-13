@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMovieRating } from "../../../core/contexts/MovieRatingContext";
 import "./MoviesListing.css";

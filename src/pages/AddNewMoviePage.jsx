@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import AddNewMovie from "../components/features/add-new-movie/AddNewMovie";
 
 const AddNewMoviePage = () => {

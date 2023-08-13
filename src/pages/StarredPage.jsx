@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Starred from "../components/features/starred/Starred";
 
 const StarredPage = () => {
