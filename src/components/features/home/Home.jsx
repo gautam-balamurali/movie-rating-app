@@ -9,7 +9,15 @@ const Home = () => {
   const { movies } = useMovieRating();
 
   const genres = movies
-    .reduce((acc, curr) => [...acc, ...curr["genre"]], ["All Genre"])
+    .reduce(
+      (acc, curr) => [
+        ...acc,
+        ...(typeof curr["genre"] === "string"
+          ? curr["genre"].split(",").map((str) => str.trim())
+          : curr["genre"]),
+      ],
+      ["All Genre"]
+    )
     .reduce((acc, curr) => (!acc.includes(curr) ? [...acc, curr] : acc), []);
 
   const years = ["Release Year", ...insertNumberValuesInArray(1990, 2023)];

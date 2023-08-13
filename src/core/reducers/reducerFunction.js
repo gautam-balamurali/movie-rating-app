@@ -4,7 +4,7 @@ export const reducerFunction = (state, action) => {
     case "UPDATE_MOVIES_DATA":
       return { ...state, movies: [...payload] };
     case "ADD_MOVIE":
-      return { ...state, movies: [...state.movies, payload] };
+      return { ...state, movies: [payload, ...state.movies] };
     case "UPDATE_GENRE_FILTER":
       return { ...state, genreFilter: payload };
     case "UPDATE_RELEASE_YEAR_FILTER":

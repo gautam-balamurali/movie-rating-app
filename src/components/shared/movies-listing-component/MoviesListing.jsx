@@ -59,7 +59,10 @@ const MoviesListing = ({
               movie?.director
                 ?.toLowerCase()
                 .includes(searchInput.toLowerCase()) ||
-              movie?.cast
+              (typeof movie?.cast === "string"
+                ? movie.cast.split(",").map((str) => str.trim())
+                : movie.cast
+              )
                 ?.map((actor) => actor.toLowerCase())
                 .join()
                 .includes(searchInput.toLowerCase())
@@ -136,7 +139,9 @@ const MoviesListing = ({
             ))}
           </select>
 
-          <button className="action-btn">Add a Movie</button>
+          <button onClick={() => navigate("/add-movie")} className="action-btn">
+            Add a Movie
+          </button>
         </div>
       )}
       <div className="movies-list-container">
