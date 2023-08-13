@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# 🎬Movie Rating App✨
+
+- A movie rating app.
+
+## Tech Stack
+
+* React
+* Netlify
+
+## Preview
+
+* [View Live](https://movie-rating-gautam-balamurali.netlify.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
