@@ -1,0 +1,19 @@
+.navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  gap: 1rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.navigation .active {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
